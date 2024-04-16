@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:animals_checker_get/base/namespaces/app_colors.dart';
 
 class BottomBarIndicator extends StatefulWidget {
   const BottomBarIndicator({super.key, required this.isActive, required this.icon});
   final bool isActive;
-  final String icon;
+  final IconData icon;
 
   @override
   State<BottomBarIndicator> createState() => _BottomBarIndicatorState();
@@ -17,7 +16,7 @@ class _BottomBarIndicatorState extends State<BottomBarIndicator> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        SvgPicture.asset(widget.icon, height: 28, color: widget.isActive ? AppColors.primary : AppColors.deactivateIcon,),
+        Icon(widget.icon, size: 24, color: widget.isActive ? AppColors.primary : AppColors.deactivateIcon,),
         Padding(
           padding: const EdgeInsets.only(top:5.0),
           child: SizedBox(

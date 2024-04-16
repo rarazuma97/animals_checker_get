@@ -1,6 +1,6 @@
 import 'package:animals_checker_get/base/namespaces/app_colors.dart';
+import 'package:animals_checker_get/base/namespaces/app_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar(
@@ -25,12 +25,9 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-            child: SvgPicture.asset(
-              'assets/images/logo.svg',
-              width: 120,
-            ),
+          const Padding(
+            padding:  EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            child:  Text('App Logo', style: CustomStyles.boldTextStyle,),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
