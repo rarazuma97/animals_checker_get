@@ -1,4 +1,5 @@
 import 'package:animals_checker_get/core/contracts/presentation/view_model.dart';
+import 'package:animals_checker_get/features/home/domain/entity/animal_by_id_entity.dart';
 import 'package:animals_checker_get/features/home/domain/entity/animal_entity.dart';
 import 'package:animals_checker_get/features/home/domain/home_repository.dart';
 import 'package:get/state_manager.dart';
@@ -12,6 +13,8 @@ class HomeViewModel extends ViewModel {
 
   List<AnimalEntity> animalList = [];
 
+  AnimalByIdEntity? animalSearched;
+
   @override
   void onInit() async {
     super.onInit();
@@ -22,17 +25,19 @@ class HomeViewModel extends ViewModel {
 
   Future<void> initAnimals() async {
     change(null, status: RxStatus.loading());
-
     var response = await _homeRepository.getAnimalSpecies();
     if (response != null) {
       animalList = response.animalList!;
     }
     update();
     change(animalList, status: RxStatus.success());
-
   }
 
   Future<void> showAnimalDetail(int id) async {
-
+    var response = await _homeRepository.getAnimalByid(id.toString());
+    if(response != null) {
+      animalSearched = response.result!.first;
+    }
+    update();
   }
 }

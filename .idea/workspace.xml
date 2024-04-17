@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="378e60a1-bc7b-4694-b81c-f5fe8164b502" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_by_id_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_by_id_response_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/home/presentation/view/widgets/animal_list_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/home/presentation/view/widgets/dynamic_data_widget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animals_checker_get.iml" beforeDir="false" afterPath="$PROJECT_DIR$/animals_checker_get.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base/api/endpoints.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/api/endpoints.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base/namespaces/app_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/namespaces/app_styles.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base/network/client_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/network/client_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core/widgets/loading_state_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/widgets/loading_state_view.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/data/data_sources/home_remote_data_source.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/data_sources/home_remote_data_source.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/home/data/data_sources/home_remote_data_source_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/data_sources/home_remote_data_source_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/data/models/animal_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/data/models/animal_model.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_model.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/data/models/animal_species_response_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_species_response_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/data/models/animal_species_response_model.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_species_response_model.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/data/models/animal_by_id_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_by_id_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/data/models/animal_by_id_model.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_by_id_model.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/data/models/animal_by_id_response_model.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/models/animal_by_id_response_model.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/domain/home_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/domain/home_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/home/domain/home_repostory_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/domain/home_repostory_impl.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/home/presentation/view/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/view/screens/home_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/features/home/presentation/view_models/home_view_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/view_models/home_view_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,20 +60,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "C:/Users/Rarazuma/Desktop/animals_checker_get",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rarazuma/Desktop/animals_checker_get&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -98,5 +90,21 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/home/presentation/view/widgets/dynamic_data_widget.dart</url>
+          <line>52</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/home/presentation/view/widgets/dynamic_data_widget.dart</url>
+          <line>53</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

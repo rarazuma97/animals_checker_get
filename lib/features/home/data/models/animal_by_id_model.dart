@@ -7,6 +7,7 @@ part 'animal_by_id_model.g.dart';
 @JsonSerializable()
 class AnimalByIdModel extends Model<AnimalByIdEntity> {
   final int? taxonid;
+  @JsonKey(name: 'scientific_name')
   final String? scientificName;
   final String? kingdom;
   final String? phylum;
@@ -15,21 +16,27 @@ class AnimalByIdModel extends Model<AnimalByIdEntity> {
   final String? order;
   final String? family;
   final String? genus;
+  @JsonKey(name: 'main_common_name')
   final String? mainCommonName;
   final String? authority;
   final int? publishedYear;
+  @JsonKey(name: 'assessment_date')
   final String? assessmentDate;
   final String? category;
   final String? criteria;
   final String? populationTrend;
+  @JsonKey(name: 'marine_system')
   final bool? marineSystem;
+  @JsonKey(name: 'freshwater_system')
   final bool? freshwaterSystem;
+  @JsonKey(name: 'terrestrial_system')
   final bool? terrestrialSystem;
   final String? assessor;
   final String? reviewer;
   final int? elevationUpper;
   final int? elevationLower;
   final bool? amendedFlag;
+  @JsonKey(name: 'amended_reason')
   final String? amendedReason;
 
 
