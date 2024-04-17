@@ -1,4 +1,5 @@
 import 'package:animals_checker_get/features/home/presentation/view/widgets/animal_list_item.dart';
+import 'package:animals_checker_get/features/home/presentation/view/widgets/dynamic_data_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
  import 'package:animals_checker_get/core/contracts/presentation/screen.dart';
@@ -36,7 +37,9 @@ class HomeScreen extends Screen<HomeViewModel> {
               ),
               color: Colors.white,
               height: context.height,
-              child:  const Center(
+              child:   viewModel.animalSearched != null
+                  ? DynamicDataWidget(animal: viewModel.animalSearched!)
+                  : const Center(
                 child: Text(
                   'Seleziona un elemento per vedere la preview',
                   textAlign: TextAlign.center,
