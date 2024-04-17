@@ -8,8 +8,8 @@ class LoadingStateView extends GetView{
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: AppColors.primary,
-        child: const Center(child: CircularProgressIndicator()
+        color: AppColors.white,
+        child: const Center(child: CircularProgressIndicator(color: AppColors.primary,)
     ));
 
   }

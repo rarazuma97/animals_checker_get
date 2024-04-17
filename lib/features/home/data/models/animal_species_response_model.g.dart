@@ -11,7 +11,7 @@ AnimalSpeciesResponseModel _$AnimalSpeciesResponseModelFromJson(
     AnimalSpeciesResponseModel(
       count: json['count'] as int?,
       category: json['category'] as String?,
-      animalList: (json['result'] as List<dynamic>?)
+      result: (json['result'] as List<dynamic>?)
           ?.map((e) => AnimalModel.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
@@ -21,5 +21,5 @@ Map<String, dynamic> _$AnimalSpeciesResponseModelToJson(
     <String, dynamic>{
       'count': instance.count,
       'category': instance.category,
-      'result': instance.animalList,
+      'result': instance.result,
     };

@@ -18,7 +18,7 @@ Dopo aver installato il progetto, è possibile avviarlo eseguendo il comando:
 Flutter run || Flutter build
 
 per la genereazione di ogni modello usare il comando 
-flutter packages pub run build_runner build --delete-conflicting-outputs>> 
+flutter packages pub run build_runner build --delete-conflicting-outputs
 
 
 

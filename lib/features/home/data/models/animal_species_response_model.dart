@@ -10,12 +10,12 @@ class AnimalSpeciesResponseModel extends Model<AnimalSpeciesResponseEntity> {
   final int? count;
   final String? category;
   @JsonKey(name: 'result')
-  final List<AnimalModel>? animalList;
+  final List<AnimalModel>? result;
 
   AnimalSpeciesResponseModel({
     this.count,
     this.category,
-    this.animalList
+    this.result
   });
 
   @override
@@ -23,7 +23,7 @@ class AnimalSpeciesResponseModel extends Model<AnimalSpeciesResponseEntity> {
     return AnimalSpeciesResponseEntity(
       count: count,
       category: category,
-      animalList: animalList?.map((e) => e.toEntity()).toList()
+      animalList: result?.map((e) => e.toEntity()).toList()
     );
   }
 
@@ -31,7 +31,7 @@ class AnimalSpeciesResponseModel extends Model<AnimalSpeciesResponseEntity> {
     return AnimalSpeciesResponseModel(
       count: entity?.count,
       category: entity?.category,
-      animalList: entity?.animalList?.map((e) => AnimalModel.fromEntity(e)).toList(),
+      result: entity?.animalList?.map((e) => AnimalModel.fromEntity(e)).toList(),
     
     );
   }

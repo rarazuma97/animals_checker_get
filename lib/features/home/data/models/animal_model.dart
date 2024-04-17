@@ -7,6 +7,7 @@ part 'animal_model.g.dart';
 @JsonSerializable()
 class AnimalModel extends Model<AnimalEntity> {
   final int? taxonid;
+  @JsonKey(name: 'scientific_name')
   final String? scientificName;
   final String? subspecies;
   final String? rank;

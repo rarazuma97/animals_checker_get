@@ -1,8 +1,8 @@
- import 'package:flutter/foundation.dart';
- import 'package:dio/dio.dart';
+import 'package:animals_checker_get/base/utils/constant.dart';
+import 'package:flutter/foundation.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:animals_checker_get/base/api/endpoints.dart';
-  
 
 class ApiClient {
   Dio dio = Dio();
@@ -10,8 +10,8 @@ class ApiClient {
   ApiClient() {
     BaseOptions options = BaseOptions(
         baseUrl: Endpoints.baseUrl,
-        connectTimeout: 60 * 1000, // 60 seconds
-        receiveTimeout: 60 * 1000 // 60 seconds
+        connectTimeout: const Duration(seconds: 15), // 60 seconds
+        receiveTimeout: const Duration(seconds: 15) // 60 seconds
         );
 
     dio = Dio(options);
@@ -23,8 +23,7 @@ class ApiClient {
         onResponse: (response, handler) {
           return handler.next(response);
         },
-        onError: (DioError e, handler) async {
-          
+        onError: (DioException e, handler) async {
           return handler.next(e);
         },
       ),
@@ -34,11 +33,11 @@ class ApiClient {
   Future<Response<T>> get<T>(
       {required String endpoint, Map<String, dynamic>? queryParameters}) async {
     try {
+      queryParameters ??= {};
+      queryParameters.addAll({'token': Constant.token});
       return await dio.get(endpoint,
-          queryParameters: queryParameters,
-          options: Options(
-          ));
-    } on DioError catch (e) {
+          queryParameters: queryParameters, options: Options());
+    } on DioException catch (e) {
       if (kDebugMode) {
         print('Error: $e');
       }
@@ -67,13 +66,13 @@ class ApiClient {
     }
   }
 
-  Future<Response> put(String endpoint, dynamic data, Map<String, dynamic>? queryParameters) async {
+  Future<Response> put(String endpoint, dynamic data,
+      Map<String, dynamic>? queryParameters) async {
     String? token = await storage.read(key: "token");
     try {
-      return await dio.put(
-          endpoint,
+      return await dio.put(endpoint,
           data: data,
-          queryParameters : queryParameters,
+          queryParameters: queryParameters,
           options: Options(headers: {
             'Authorization': 'Bearer $token',
             'Content-Type': 'application/json',
