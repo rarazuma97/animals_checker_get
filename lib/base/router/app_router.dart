@@ -1,5 +1,6 @@
 import 'package:animals_checker_get/base/router/app_routes.dart';
 import 'package:animals_checker_get/core/contracts/presentation/page.dart';
+import 'package:animals_checker_get/features/animal_detail/presentation/view/pages/animal_detail_page.dart';
 import 'package:animals_checker_get/features/main_screen/pages/main_page.dart';
 import 'package:animals_checker_get/features/splashscreen/presentation/pages/splash_page.dart';
 
@@ -13,7 +14,8 @@ abstract class AppRouter {
     return <Page<dynamic>>[
       SplashPage(),
       MainPage(),
- 
+      AnimalDetailPage(),
+
     ];
   }
 }

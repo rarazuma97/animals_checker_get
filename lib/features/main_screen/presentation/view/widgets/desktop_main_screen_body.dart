@@ -22,8 +22,7 @@ class DesktopMainScreenBody extends StatelessWidget {
                 child: CustomAppBar(
                   showHamburgerIcon: false,
                   iconMenuPressed: viewModel.openDrawer,
-                  iconNotificationsPressed: viewModel.openNotificationsDrawer,
-                  
+
                 ),
               ),
               body: Row(

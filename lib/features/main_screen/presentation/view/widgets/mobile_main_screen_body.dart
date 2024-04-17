@@ -26,7 +26,6 @@ class MobileMainScreenBody extends StatelessWidget {
                   child: CustomAppBar(
                     showHamburgerIcon: true,
                     iconMenuPressed: viewModel.openDrawer,
-                    iconNotificationsPressed: viewModel.openNotificationsDrawer,
                   ),
                 ),
                 body: viewModel.pageList
