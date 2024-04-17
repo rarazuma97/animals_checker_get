@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart' show GetPage;
-import 'package:animals_checker_get/core/utils/arguments.dart';
+import 'package:animals_checker_get/base/utils/arguments.dart';
  
 typedef ScreenBuilder = Widget Function();
 

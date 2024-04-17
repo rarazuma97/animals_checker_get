@@ -5,7 +5,7 @@ import 'package:animals_checker_get/features/splashscreen/presentation/pages/spl
 
 
 abstract class AppRouter {
-  static const String initial = Routes.mainPage;
+  static const String initial = Routes.splash;
 
   static List<Page<dynamic>> get pages => _getPages();
 

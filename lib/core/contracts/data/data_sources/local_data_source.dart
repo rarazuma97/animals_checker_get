@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:animals_checker_get/core/contracts/data/data_sources/data_source.dart';
  
 import 'package:animals_checker_get/core/contracts/domain/entity.dart';
-import 'package:animals_checker_get/core/utils/params.dart';
+import 'package:animals_checker_get/base/utils/params.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 abstract class BaseLocalDataSource<E extends Entity, P extends Params<E>>

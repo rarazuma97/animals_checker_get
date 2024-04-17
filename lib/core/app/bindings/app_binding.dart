@@ -16,7 +16,7 @@ class AppBinding extends Binding {
     final SharedPreferences preferences = await SharedPreferences.getInstance();
     Get.put<SharedPreferences>(preferences);
 
-     const FlutterSecureStorage secureStorage =  FlutterSecureStorage();
+    const FlutterSecureStorage secureStorage =  FlutterSecureStorage();
     Get.put<FlutterSecureStorage>(secureStorage);
 
     }

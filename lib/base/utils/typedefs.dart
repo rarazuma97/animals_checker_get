@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:animals_checker_get/core/utils/message_type.dart';
+import 'package:animals_checker_get/base/utils/message_type.dart';
  
 
 typedef MessengerCallback<S> = void Function(

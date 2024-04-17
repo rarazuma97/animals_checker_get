@@ -16,8 +16,8 @@ import 'package:get/get.dart'
         RxStatus,
         SimpleBuilder,
         StateMixin;
-import 'package:animals_checker_get/core/utils/arguments.dart';
-import 'package:animals_checker_get/core/utils/typedefs.dart';
+import 'package:animals_checker_get/base/utils/arguments.dart';
+import 'package:animals_checker_get/base/utils/typedefs.dart';
  
 import 'package:animals_checker_get/core/widgets/empty_state_view.dart';
 import 'package:animals_checker_get/core/widgets/error_state_view.dart';

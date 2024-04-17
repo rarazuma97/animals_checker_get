@@ -1,15 +1,15 @@
 import 'package:animals_checker_get/base/namespaces/app_colors.dart';
-import 'package:animals_checker_get/base/namespaces/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar(
       {super.key,
       required this.iconNotificationsPressed,
-      required this.iconMenuPressed});
+      required this.iconMenuPressed, required this.showHamburgerIcon});
 
   final Function() iconNotificationsPressed;
   final Function() iconMenuPressed;
+  final bool showHamburgerIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -25,25 +25,26 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const Padding(
-            padding:  EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-            child:  Text('App Logo', style: CustomStyles.boldTextStyle,),
-          ),
           Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            child: Image.asset('lib/assets/logo.png'),
+          ),
+         showHamburgerIcon ? Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: SizedBox(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
-                    onPressed: iconMenuPressed,
-                    icon: const Icon(Icons.menu, color: AppColors.cardPrimary,)
-                  
-                  )
+                      onPressed: iconMenuPressed,
+                      icon: const Icon(
+                        Icons.menu,
+                        color: AppColors.cardPrimary,
+                      ))
                 ],
               ),
             ),
-          )
+          ) : const SizedBox.shrink()
         ],
       ),
     );

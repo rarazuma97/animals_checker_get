@@ -20,8 +20,10 @@ class DesktopMainScreenBody extends StatelessWidget {
               appBar: PreferredSize(
                 preferredSize: const Size.fromHeight(80),
                 child: CustomAppBar(
+                  showHamburgerIcon: false,
                   iconMenuPressed: viewModel.openDrawer,
                   iconNotificationsPressed: viewModel.openNotificationsDrawer,
+                  
                 ),
               ),
               body: Row(

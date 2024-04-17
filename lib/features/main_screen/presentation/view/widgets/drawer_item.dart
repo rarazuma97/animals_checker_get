@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:animals_checker_get/base/namespaces/app_colors.dart';
 import 'package:animals_checker_get/base/namespaces/app_styles.dart';
 
