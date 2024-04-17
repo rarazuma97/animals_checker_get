@@ -8,7 +8,7 @@ part of 'animal_model.dart';
 
 AnimalModel _$AnimalModelFromJson(Map<String, dynamic> json) => AnimalModel(
       taxonid: json['taxonid'] as int?,
-      scientificName: json['scientificName'] as String?,
+      scientificName: json['scientific_name'] as String?,
       subspecies: json['subspecies'] as String?,
       rank: json['rank'] as String?,
       subpopulation: json['subpopulation'],
@@ -17,7 +17,7 @@ AnimalModel _$AnimalModelFromJson(Map<String, dynamic> json) => AnimalModel(
 Map<String, dynamic> _$AnimalModelToJson(AnimalModel instance) =>
     <String, dynamic>{
       'taxonid': instance.taxonid,
-      'scientificName': instance.scientificName,
+      'scientific_name': instance.scientificName,
       'subspecies': instance.subspecies,
       'rank': instance.rank,
       'subpopulation': instance.subpopulation,

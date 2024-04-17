@@ -8,7 +8,8 @@ extension CustomStyles  on Never{
   static const TextStyle regularTextStyle = TextStyle(
     fontFamily: 'HelveticaNeue',
     fontWeight: FontWeight.bold,
-    fontSize: 16.0,
+    fontSize: 14.0,
+    color: Colors.black
   );
 
   static const TextStyle regularTextStyleLarge = TextStyle(
