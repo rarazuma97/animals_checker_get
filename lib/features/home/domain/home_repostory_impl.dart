@@ -17,5 +17,6 @@ class HomeRepositoryImpl extends HomeRepository {
   Future<AnimalByIdResponseEntity?> getAnimalByid(String id) async {
     return await _remoteDataSource.getAnimalById(id);
   }
+
   
 }

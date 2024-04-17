@@ -1,8 +1,9 @@
+import 'package:animals_checker_get/base/router/app_routes.dart';
 import 'package:animals_checker_get/core/contracts/presentation/view_model.dart';
 import 'package:animals_checker_get/features/home/domain/entity/animal_by_id_entity.dart';
 import 'package:animals_checker_get/features/home/domain/entity/animal_entity.dart';
 import 'package:animals_checker_get/features/home/domain/home_repository.dart';
-import 'package:get/state_manager.dart';
+import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeViewModel extends ViewModel {
@@ -39,5 +40,14 @@ class HomeViewModel extends ViewModel {
       animalSearched = response.result!.first;
     }
     update();
+  }
+
+  void navigateToDetail(int? id){
+    _sharedPreferences.setInt('id', animalSearched!.taxonid!);
+    _sharedPreferences.setString('id', animalSearched!.scientificName!);
+    Get.toNamed(Routes.animalDetail, arguments: {
+      'id' :  animalSearched?.taxonid,
+      'name' : animalSearched?.scientificName,
+    });
   }
 }

@@ -17,20 +17,27 @@ class DynamicDataWidget extends StatelessWidget {
        child: Column(
          crossAxisAlignment: CrossAxisAlignment.start,
          children:
-           i.entries.map((e) =>  buildWidget(e.key, e.value)).toList()
+           i.entries.map((e) =>  Padding(
+             padding: const EdgeInsets.symmetric(vertical:5.0),
+             child: buildWidget(e.key, e.value),
+           )).toList(),
        ),
      );
     }
 
   Widget buildWidget(String label, dynamic value) {
       if(value is String) {
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        return Container(
+          constraints: BoxConstraints(minWidth: 400),
+          width: 300,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
 
-          children: [
-            Text(parseKeyMap(label), style: CustomStyles.boldTextStyle,),
-            Text(value),
-          ],
+            children: [
+              Text(parseKeyMap(label), style: CustomStyles.boldTextStyle,),
+              Text(value),
+            ],
+          ),
         );
       } else if(value is bool) {
         return Row(
@@ -80,6 +87,8 @@ class DynamicDataWidget extends StatelessWidget {
         return 'Ordine';
       case 'genus':
         return 'Genus';
+      case 'main_common_name':
+        return 'Nome Comune';
       case 'authority':
         return 'Autoritá';
       case 'assessment_date':
@@ -96,6 +105,12 @@ class DynamicDataWidget extends StatelessWidget {
         return 'Accertatore ';
       case 'terrestrial_system':
         return 'Sistema di terra';
+      case 'reviewer':
+        return 'valutatore';
+      case 'amended_reason':
+        return 'Motivo di revisione';
+      case 'amended_flag':
+        return 'Sotto osservazione';
         default: return '';
     }
   }
