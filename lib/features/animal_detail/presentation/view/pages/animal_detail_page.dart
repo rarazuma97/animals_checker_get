@@ -2,6 +2,7 @@ import 'package:animals_checker_get/base/router/app_routes.dart';
 import 'package:animals_checker_get/core/contracts/presentation/page.dart';
 import 'package:animals_checker_get/features/animal_detail/bindings/animal_detail_bindings.dart';
 import 'package:animals_checker_get/features/animal_detail/presentation/view/screens/animal_detail_screen.dart';
+import 'package:get/get.dart';
 
  
 class AnimalDetailPage extends Page {
@@ -10,5 +11,6 @@ class AnimalDetailPage extends Page {
           name: Routes.animalDetail,
           page: AnimalDetailScreen.new,
           binding: AnimalDetailBinding(),
+          transition: Transition.noTransition
         );
 }

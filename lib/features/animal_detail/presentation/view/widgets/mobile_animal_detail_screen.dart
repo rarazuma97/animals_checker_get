@@ -5,8 +5,8 @@ import 'package:animals_checker_get/features/main_screen/presentation/view/widge
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class DesktopAnimalDetailScreen extends StatelessWidget {
-  const DesktopAnimalDetailScreen({super.key, required this.animalInfo, required this.scientificName});
+class MobileAnimalDetailScreen extends StatelessWidget {
+  const MobileAnimalDetailScreen({super.key, required this.animalInfo, required this.scientificName});
 
   final ExtendedInfoEntity animalInfo;
   final String scientificName;
@@ -27,7 +27,7 @@ class DesktopAnimalDetailScreen extends StatelessWidget {
       body: Align(
         alignment: Alignment.topCenter,
         child: SizedBox(
-          width: context.width * 0.4,
+          width: context.width,
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

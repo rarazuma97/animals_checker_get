@@ -1,15 +1,20 @@
 import 'package:animals_checker_get/base/namespaces/app_colors.dart';
+import 'package:animals_checker_get/base/namespaces/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar(
       {super.key,
-      required this.iconMenuPressed, required this.showHamburgerIcon, this.showArrowBack});
+      required this.iconMenuPressed,
+      required this.showHamburgerIcon,
+      this.showArrowBack,
+      this.title});
 
   final Function() iconMenuPressed;
   final bool showHamburgerIcon;
   final bool? showArrowBack;
+  final String? title;
 
   @override
   Widget build(BuildContext context) {
@@ -25,33 +30,44 @@ class CustomAppBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          showArrowBack ?? false
-          ? Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-            child: IconButton(onPressed: () {
-              Get.back();
-            }, icon: const Icon(Icons.arrow_back_ios_new)),
-          )
-          : Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-            child: Image.asset('lib/assets/logo.png'),
+          Row(
+            children: [
+              showArrowBack ?? false
+                  ? Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 20, horizontal: 10),
+                      child: IconButton(
+                          onPressed: () {
+                            Get.back();
+                          },
+                          icon: const Icon(Icons.arrow_back_ios_new)),
+                    )
+                  : Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 20, horizontal: 10),
+                      child: Image.asset('lib/assets/logo.png'),
+                    ),
+                  Text(title ?? '', style: CustomStyles.boldTextStyle.copyWith(color: AppColors.primary),)
+            ],
           ),
-         showHamburgerIcon ? Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: SizedBox(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                      onPressed: iconMenuPressed,
-                      icon: const Icon(
-                        Icons.menu,
-                        color: AppColors.cardPrimary,
-                      ))
-                ],
-              ),
-            ),
-          ) : const SizedBox.shrink()
+          showHamburgerIcon
+              ? Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: SizedBox(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        IconButton(
+                            onPressed: iconMenuPressed,
+                            icon: const Icon(
+                              Icons.menu,
+                              color: AppColors.cardPrimary,
+                            ))
+                      ],
+                    ),
+                  ),
+                )
+              : const SizedBox.shrink()
         ],
       ),
     );

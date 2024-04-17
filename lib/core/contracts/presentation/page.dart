@@ -13,6 +13,7 @@ abstract class Page<T> extends GetPage<T> {
     super.bindings,
     super.middlewares,
     super.children,
+    super.transition
   });
 
   // shorthand syntax.

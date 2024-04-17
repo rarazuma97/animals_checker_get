@@ -5,6 +5,7 @@ import 'package:animals_checker_get/features/animal_detail/domain/animal_detail_
 import 'package:animals_checker_get/features/animal_detail/presentation/view_models/animal_detail_view_model.dart';
 import 'package:get/get.dart';
  import 'package:animals_checker_get/core/contracts/generic/binding.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
  
 
@@ -23,6 +24,8 @@ class AnimalDetailBinding extends Binding {
     Get.lazyPut(
       () => AnimalDetailViewModel(
           Get.find<AnimalDetailRepository>(),
+          Get.find<SharedPreferences>(),
+          
       )
     );
   }

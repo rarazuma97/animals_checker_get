@@ -5,8 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class DesktopMainScreenBody extends StatelessWidget {
-  const DesktopMainScreenBody({Key? key, required this.viewModel})
-      : super(key: key);
+  const DesktopMainScreenBody({super.key, required this.viewModel});
 
   final MainScreenViewModel viewModel;
 
@@ -22,6 +21,7 @@ class DesktopMainScreenBody extends StatelessWidget {
                 child: CustomAppBar(
                   showHamburgerIcon: false,
                   iconMenuPressed: viewModel.openDrawer,
+                  title: 'Specie Vulnerabili',
 
                 ),
               ),
