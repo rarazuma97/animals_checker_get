@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:animals_checker_get/base/namespaces/app_colors.dart';
 import 'package:animals_checker_get/base/namespaces/app_styles.dart';
 
@@ -12,7 +11,7 @@ class DrawerItem extends StatelessWidget {
       required this.onTapItem,
       required this.index});
 
-  final String icon;
+  final IconData icon;
   final String text;
   final int index;
   final bool isActive;
@@ -26,10 +25,10 @@ class DrawerItem extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 11),
         child: Row(
           children: [
-            SvgPicture.asset(
-              'assets/icons/$icon.svg',
-              width: 20,
+            Icon(
+              icon,
               color: isActive ? AppColors.primary : AppColors.deactivateIcon,
+              size: 24,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),

@@ -17,39 +17,22 @@ class MainScreenViewModel extends ViewModel {
     HomeScreen(),
     const Center(
       child: Text(
-        'reels',
+        'Search',
         style: CustomStyles.boldTextStyle,
       ),
     ),
     const Center(
         child: Text(
-      'add',
+      'settings',
       style: CustomStyles.boldTextStyle,
     )),
-    const Center(
-      child: Text(
-        'search',
-        style: CustomStyles.boldTextStyle,
-      ),
-    ),
     const Center(
       child: Text(
         'account',
         style: CustomStyles.boldTextStyle,
       ),
     ),
-    const Center(
-      child: Text(
-        'settings',
-        style: CustomStyles.boldTextStyle,
-      ),
-    ),
-    const Center(
-      child: Text(
-        'preferiti',
-        style: CustomStyles.boldTextStyle,
-      ),
-    ),
+
   ];
 
   @override

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:animals_checker_get/base/network/client_service.dart';
 import 'package:animals_checker_get/core/contracts/data/data_sources/data_source.dart'; 
 import 'package:animals_checker_get/core/contracts/domain/entity.dart';
-import 'package:animals_checker_get/core/utils/params.dart';
+import 'package:animals_checker_get/base/utils/params.dart';
 
 abstract class BaseRemoteDataSource<ID, E extends Entity, P extends Params<E>>
     extends DataSource<E, P> {
