@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="378e60a1-bc7b-4694-b81c-f5fe8164b502" name="Changes" comment="add firebase login - signup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base/router/app_routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/router/app_routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/custom_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/custom_drawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/desktop_main_screen_body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/desktop_main_screen_body.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/logout_drawer_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/logout_drawer_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/mobile_main_screen_body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/mobile_main_screen_body.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view_models/main_screen_view_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view_models/main_screen_view_model.dart" afterDir="false" />
-    </list>
+    <list default="true" id="378e60a1-bc7b-4694-b81c-f5fe8164b502" name="Changes" comment="hot fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +89,6 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "features/login__firebase__impl",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "C:/Users/Rarazuma/Desktop/animals_checker_get/lib/features/auth/presentation/view_model",
     "show.migrate.to.gradle.popup": "false"
@@ -149,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713433279941</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hot fix">
+      <option name="closed" value="true" />
+      <created>1713438356734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713438356734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -160,9 +159,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add preview to main screen fopr desktop" />
-    <MESSAGE value="hot fix" />
     <MESSAGE value="add firebase login - signup" />
-    <option name="LAST_COMMIT_MESSAGE" value="add firebase login - signup" />
+    <MESSAGE value="hot fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="hot fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

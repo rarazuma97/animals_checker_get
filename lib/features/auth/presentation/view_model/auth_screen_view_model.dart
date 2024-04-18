@@ -1,8 +1,8 @@
-import 'package:animals_checker_get/base/router/app_routes.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get/get.dart';
 import 'package:animals_checker_get/core/contracts/presentation/view_model.dart';
+import 'package:go_router/go_router.dart';
 
 class AuthScreenViewModel extends ViewModel {
   final FlutterSecureStorage _secureStorage;
@@ -28,7 +28,7 @@ class AuthScreenViewModel extends ViewModel {
         key: 'auth_token',
         value: await statusLogin.user!.getIdToken(),
       );
-      Get.offAllNamed(Routes.mainPage);
+      context.goNamed('home');
     } else {
       Get.snackbar('Warning', 'Check your email, you should verify your registration');
     }
