@@ -10,15 +10,18 @@ class SplashViewModel extends ViewModel {
 
   @override
   void onInit() async {
+    super.onInit();
     await checkUserSession();
-    super.onInit(); 
+
   }
 
   Future<void> checkUserSession() async {
 
      await Future<void>.delayed(const Duration(seconds: 2));
-    
-        await Get.offNamed(Routes.mainPage);
-        // : await Get.offNamed(Routes.login);
+        String? id = await _storage.read(key: 'auth_token');
+        if(id != null) {
+          await Get.offNamed(Routes.mainPage);
+        }
+        await Get.offNamed(Routes.auth);
   }
 }

@@ -7,13 +7,14 @@ class SplashScreen extends Screen<SplashViewModel> {
 
   @override
   Widget builder() {
-    return Scaffold(
+    return viewModel.obx((state) => Scaffold(
       backgroundColor: Colors.white,
       body: Center(
           child: Image.asset(
         'lib/assets/logo.png',
         width: 200,
-      )),
+      ))
+    ),
     );
   }
 }

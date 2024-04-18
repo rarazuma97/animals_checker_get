@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1013281379045",
+    "project_id": "redlist-7bd64",
+    "storage_bucket": "redlist-7bd64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013281379045:android:b00634d5f691f82ffafa0c",
+        "android_client_info": {
+          "package_name": "com.example.animals_checker_get"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSuvnhI6ToiKyS2Ges_ctDcDFicOHbfzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

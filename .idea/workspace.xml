@@ -4,38 +4,27 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="378e60a1-bc7b-4694-b81c-f5fe8164b502" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/base/api/api_exception.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/bindings/animal_detail_bindings.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/data/data_sources/animal_detail_remote_data_source.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/data/data_sources/animal_detail_remote_data_source_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/data/models/extended_animal_info_response_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/data/models/extended_animal_info_response_model.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/data/models/extended_info_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/data/models/extended_info_model.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/domain/animal_detail_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/domain/animal_detail_repostory_impl.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/domain/entity/extended_animal_info_response_entity.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/domain/entity/extended_info_entity.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/presentation/view/pages/animal_detail_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/presentation/view/screens/animal_detail_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/presentation/view/widgets/build_info_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/presentation/view/widgets/desktop_animal_detail_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/animal_detail/presentation/view_models/animal_detail_view_model.dart" afterDir="false" />
+    <list default="true" id="378e60a1-bc7b-4694-b81c-f5fe8164b502" name="Changes" comment="hot fix">
+      <change afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/auth/bindings/auth_screen_binding.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/auth/pages/auth_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/auth/presentation/view/screens/auth_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features/auth/presentation/view_model/auth_screen_view_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/firebase_options.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base/api/endpoints.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/api/endpoints.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/base/router/app_router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/router/app_router.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/base/router/app_routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/router/app_routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base/router/dependencies_routing_manager.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/data/data_sources/home_remote_data_source_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/data/data_sources/home_remote_data_source_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/domain/home_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/domain/home_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/domain/home_repostory_impl.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/domain/home_repostory_impl.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/presentation/view/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/view/screens/home_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/presentation/view/widgets/dynamic_data_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/view/widgets/dynamic_data_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/home/presentation/view_models/home_view_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/home/presentation/view_models/home_view_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/custom_app_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/custom_app_bar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/desktop_main_screen_body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/desktop_main_screen_body.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/mobile_main_screen_body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/mobile_main_screen_body.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/splashscreen/presentation/view/screen/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/splashscreen/presentation/view/screen/splash_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/splashscreen/presentation/view_model/splash_view_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/splashscreen/presentation/view_model/splash_view_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,15 +108,17 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "C:/Users/Rarazuma/Desktop/animals_checker_get/lib/features/animal_detail",
+    "last_opened_file_path": "C:/Users/Rarazuma/Desktop/animals_checker_get/lib/features/auth/presentation/view_model",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\animal_detail" />
-      <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\home\domain\entity" />
-      <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\home\data\models" />
+      <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\auth\presentation\view_model" />
+      <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\auth\presentation\view\screens" />
+      <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\auth\presentation\view" />
+      <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\auth\bindings" />
+      <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\auth\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Rarazuma\Desktop\animals_checker_get\lib\features\animal_detail\domain\entity" />
@@ -151,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713367253568</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hot fix">
+      <option name="closed" value="true" />
+      <created>1713428263816</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713428263816</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -162,10 +161,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add preview to main screen fopr desktop" />
-    <option name="LAST_COMMIT_MESSAGE" value="add preview to main screen fopr desktop" />
+    <MESSAGE value="hot fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="hot fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/features/splashscreen/presentation/view/screen/splash_screen.dart</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception" />
         <breakpoint enabled="true" type="CidrExceptionBreakpoint" />
