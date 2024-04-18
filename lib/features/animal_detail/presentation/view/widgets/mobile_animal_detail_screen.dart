@@ -13,35 +13,37 @@ class MobileAnimalDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      backgroundColor: Colors.white,
-      appBar:PreferredSize(
-        preferredSize: const Size.fromHeight(100),
-        child: CustomAppBar(
-          title: scientificName,
-          showArrowBack: true,
-          showHamburgerIcon: false,
-          iconMenuPressed: () {},
+    return  SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        appBar:PreferredSize(
+          preferredSize: const Size.fromHeight(100),
+          child: CustomAppBar(
+            title: scientificName,
+            showArrowBack: true,
+            showHamburgerIcon: false,
+            iconMenuPressed: () {},
+          ),
         ),
-      ),
-      body: Align(
-        alignment: Alignment.topCenter,
-        child: SizedBox(
-          width: context.width,
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const CustomPlacholder(),
-                BuildInfoData(value: animalInfo.conservationmeasures ?? ''),
-                BuildInfoData(value: animalInfo.geographicrange ?? ''),
-                BuildInfoData(value: animalInfo.habitat ?? ''),
-                BuildInfoData(value: animalInfo.population ?? ''),
-                BuildInfoData(value: animalInfo.rationale ?? ''),
-                BuildInfoData(value: animalInfo.taxonomicnotes ?? ''),
-                BuildInfoData(value: animalInfo.threats ?? ''),
-                BuildInfoData(value: animalInfo.usetrade ?? ''),
-              ],
+        body: Align(
+          alignment: Alignment.topCenter,
+          child: SizedBox(
+            width: context.width,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const CustomPlacholder(),
+                  BuildInfoData(value: animalInfo.conservationmeasures ?? ''),
+                  BuildInfoData(value: animalInfo.geographicrange ?? ''),
+                  BuildInfoData(value: animalInfo.habitat ?? ''),
+                  BuildInfoData(value: animalInfo.population ?? ''),
+                  BuildInfoData(value: animalInfo.rationale ?? ''),
+                  BuildInfoData(value: animalInfo.taxonomicnotes ?? ''),
+                  BuildInfoData(value: animalInfo.threats ?? ''),
+                  BuildInfoData(value: animalInfo.usetrade ?? ''),
+                ],
+              ),
             ),
           ),
         ),
