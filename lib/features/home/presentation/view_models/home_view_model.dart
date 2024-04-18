@@ -45,7 +45,7 @@ class HomeViewModel extends ViewModel {
   void navigateToDetail(int? id){
     _sharedPreferences.setInt('id', animalSearched!.taxonid!);
     _sharedPreferences.setString('name', animalSearched!.scientificName!);
-    Get.toNamed(Routes.animalDetail, arguments: {
+    Get.offAndToNamed(Routes.animalDetail, arguments: {
       'id' :  animalSearched?.taxonid,
       'name' : animalSearched?.scientificName,
     });

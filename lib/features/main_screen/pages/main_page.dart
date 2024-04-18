@@ -5,6 +5,7 @@ import 'package:animals_checker_get/core/contracts/presentation/page.dart';
 import 'package:animals_checker_get/features/home/bindings/home_bindings.dart';
 import 'package:animals_checker_get/features/main_screen/bindings/main_screen_binding.dart';
 import 'package:animals_checker_get/features/main_screen/presentation/view/screens/main_screen.dart';
+import 'package:get/get.dart';
 
 class MainPage extends Page {
   MainPage()
@@ -15,5 +16,6 @@ class MainPage extends Page {
             MainScreenBinding(),
             HomeBinding(),
            ],
+          transition: Transition.noTransition
         );
 }

@@ -19,6 +19,7 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
+      physics: const NeverScrollableScrollPhysics(),
       child: Container(
         width: isDesktop ? 270 : context.width * 0.55,
         height: context.height,
