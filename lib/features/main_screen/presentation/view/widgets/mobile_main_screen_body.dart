@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
  
 class MobileMainScreenBody extends StatelessWidget {
-  const MobileMainScreenBody({Key? key, required this.viewModel}) : super(key: key);
+  const MobileMainScreenBody({super.key, required this.viewModel});
 
   final MainScreenViewModel viewModel;
 
@@ -20,7 +20,9 @@ class MobileMainScreenBody extends StatelessWidget {
                 drawer: CustomDrawer(
                   isDesktop: false,
                   index: viewModel.selectedBottomBarIndex.value,
-                  onTapItem: viewModel.switchPage),
+                  onTapItem: viewModel.switchPage,
+                  logoutGesture: () => viewModel.logout(),
+                ),
                 appBar: PreferredSize(
                   preferredSize: const Size.fromHeight(80),
                   child: CustomAppBar(

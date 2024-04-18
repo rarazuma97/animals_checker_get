@@ -1,14 +1,18 @@
+import 'package:animals_checker_get/base/router/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get/get.dart';
 import 'package:animals_checker_get/base/namespaces/app_styles.dart';
 import 'package:animals_checker_get/core/contracts/presentation/view_model.dart';
 import 'package:animals_checker_get/features/home/presentation/view/screens/home_screen.dart';
 
 class MainScreenViewModel extends ViewModel {
-  MainScreenViewModel();
+  final FlutterSecureStorage _secureStorage;
+  MainScreenViewModel(this._secureStorage);
 
   RxInt selectedBottomBarIndex = 0.obs;
   RxString userId = ''.obs;
+
 
 
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>(); //
@@ -61,5 +65,10 @@ class MainScreenViewModel extends ViewModel {
 
   void closeNotificationsDrawer() {
     scaffoldKey.currentState?.closeEndDrawer();
+  }
+
+  Future<void> logout() async {
+    await _secureStorage.delete(key: 'auth_token');
+    await Get.offAllNamed(Routes.auth);
   }
 }
