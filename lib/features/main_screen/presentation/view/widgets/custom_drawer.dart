@@ -1,4 +1,3 @@
-import 'package:animals_checker_get/base/namespaces/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:animals_checker_get/features/main_screen/presentation/view/widgets/drawer_item.dart';
@@ -9,9 +8,11 @@ class CustomDrawer extends StatelessWidget {
       {super.key,
       required this.index,
       required this.onTapItem,
-      required this.isDesktop});
+      required this.isDesktop,
+      required this.logoutGesture});
 
   final Function(int) onTapItem;
+  final Function() logoutGesture;
   final int index;
   final bool isDesktop;
 
@@ -68,7 +69,9 @@ class CustomDrawer extends StatelessWidget {
                 text: 'Account',
                 isActive: index == 1,
               ),
-              const LogoutDrawerItem()
+              LogoutDrawerItem(
+                logoutGesture: () => logoutGesture(),
+              )
             ],
           ),
         ),

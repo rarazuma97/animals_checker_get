@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="378e60a1-bc7b-4694-b81c-f5fe8164b502" name="Changes" comment="hot fix">
-      <change afterPath="$PROJECT_DIR$/android/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/auth/bindings/auth_screen_binding.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/auth/pages/auth_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/auth/presentation/view/screens/auth_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features/auth/presentation/view_model/auth_screen_view_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/firebase_options.dart" afterDir="false" />
+    <list default="true" id="378e60a1-bc7b-4694-b81c-f5fe8164b502" name="Changes" comment="add firebase login - signup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base/router/app_router.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/router/app_router.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/base/router/app_routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base/router/app_routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/splashscreen/presentation/view/screen/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/splashscreen/presentation/view/screen/splash_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/splashscreen/presentation/view_model/splash_view_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/splashscreen/presentation/view_model/splash_view_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/linux/flutter/generated_plugins.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/custom_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/custom_drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/desktop_main_screen_body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/desktop_main_screen_body.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/logout_drawer_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/logout_drawer_item.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/mobile_main_screen_body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view/widgets/mobile_main_screen_body.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features/main_screen/presentation/view_models/main_screen_view_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/main_screen/presentation/view_models/main_screen_view_model.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="features/preview_animal" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,6 +51,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="features/login_firebase_impl" />
+                    <option name="lastUsedInstant" value="1713433240" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1713367291" />
@@ -106,7 +97,7 @@
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "features/login__firebase__impl",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "C:/Users/Rarazuma/Desktop/animals_checker_get/lib/features/auth/presentation/view_model",
     "show.migrate.to.gradle.popup": "false"
@@ -150,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713428263816</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add firebase login - signup">
+      <option name="closed" value="true" />
+      <created>1713433279941</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713433279941</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -162,7 +161,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add preview to main screen fopr desktop" />
     <MESSAGE value="hot fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="hot fix" />
+    <MESSAGE value="add firebase login - signup" />
+    <option name="LAST_COMMIT_MESSAGE" value="add firebase login - signup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

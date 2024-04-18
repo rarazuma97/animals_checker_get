@@ -31,6 +31,7 @@ class DesktopMainScreenBody extends StatelessWidget {
                       index: viewModel.selectedBottomBarIndex.value,
                       onTapItem: viewModel.switchPage,
                       isDesktop: true,
+                      logoutGesture: () => viewModel.logout(),
                       ),
                   Expanded(
                     child: viewModel.pageList

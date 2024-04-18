@@ -1,3 +1,4 @@
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get/get.dart';
  import 'package:animals_checker_get/core/contracts/generic/binding.dart';
 import 'package:animals_checker_get/features/home/bindings/home_bindings.dart';
@@ -7,7 +8,9 @@ class MainScreenBinding extends Binding {
   @override
   void dependencies() {
     Get.lazyPut(
-      () => MainScreenViewModel(),
+      () => MainScreenViewModel(
+        Get.find<FlutterSecureStorage>(),
+      ),
     );
 
     HomeBinding().dependencies();
