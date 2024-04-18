@@ -1,4 +1,3 @@
-import 'package:animals_checker_get/base/router/app_routes.dart';
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +16,6 @@ extension ExceptionsManagment on DioException {
             case 'Token is not active':
               Get.snackbar(
                   'Attenzione', "Sessione scaduta effettuare il login!");
-              Get.offAllNamed(Routes.auth);
               break;
             default:
               Get.snackbar(

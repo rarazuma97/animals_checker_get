@@ -20,14 +20,9 @@ class AnimalDetailViewModel extends ViewModel {
   void onInit() async {
     super.onInit();
     change(null, status: RxStatus.loading());
-    var args = Get.arguments;
-    if(args != null) {
-      id = args['id'];
-      scientificName = args['name'];
-    } else {
       id = _sharedPreferences.getInt('id');
       scientificName = _sharedPreferences.getString('name');
-    }
+
     await initNarrative();
     change(null, status: RxStatus.success());
   }
@@ -38,5 +33,4 @@ class AnimalDetailViewModel extends ViewModel {
       animalInfo = response.result!.first;
     }
   }
-
 }

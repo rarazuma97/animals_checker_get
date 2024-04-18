@@ -1,8 +1,7 @@
 import 'package:animals_checker_get/base/namespaces/app_colors.dart';
 import 'package:animals_checker_get/base/namespaces/app_styles.dart';
-import 'package:animals_checker_get/base/router/app_routes.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar(
@@ -39,7 +38,7 @@ class CustomAppBar extends StatelessWidget {
                           vertical: 20, horizontal: 10),
                       child: IconButton(
                           onPressed: () {
-                            Get.offNamed(Routes.mainPage);
+                            context.pop();
                           },
                           icon: const Icon(Icons.arrow_back_ios_new)),
                     )

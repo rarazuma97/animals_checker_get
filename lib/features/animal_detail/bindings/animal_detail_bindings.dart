@@ -25,7 +25,6 @@ class AnimalDetailBinding extends Binding {
       () => AnimalDetailViewModel(
           Get.find<AnimalDetailRepository>(),
           Get.find<SharedPreferences>(),
-          
       )
     );
   }
